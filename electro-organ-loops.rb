@@ -25,7 +25,7 @@ File.open(board,'r') do |thing|
   end
 end
 
-live_loop :ChordCityMelody do
+live_loop :orgT do
   use_bpm 80
   i = 0
   while true
@@ -37,7 +37,7 @@ live_loop :ChordCityMelody do
   end
 end
 
-live_loop :ChordCityBass do #continuous bass chords
+live_loop :orgB do #continuous bass chords
   use_bpm 80
   use_synth :chipbass
   play_chord [:C3, :F3, :A3], sustain: 2, release: 1, amp: 0.8
